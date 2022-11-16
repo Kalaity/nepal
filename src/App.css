@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  box-shadow: rgba(199, 199, 206, 0.8) 0px 7px 29px 0px;
+  margin: 0;
+  padding: 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(144, 34, 34) 0%,
+    rgb(134, 129, 93) 100%
+  );
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 320px;
+  min-height: 420px;
+  background: #897a72;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 30px;
+  border-style:groove;
+  padding-bottom: 32px;
+  box-shadow: 5px 10px #2e2121;
+}
+
+h1 {
+  margin: 62px 0;
+  color: rgb(21, 21, 21);
+  font-size: 22px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 20px 20px 20px 20px;
+  border: 2px solid #eeeae7;
+  outline: none;
+  width: 220px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 10 5px 5px 10;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgb(150, 89, 94) 0%,
+    rgb(209, 195, 102) 100%
+  
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgb(75, 92, 76) 0%,
+    rgb(48, 51, 202) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgb(110, 138, 67) 0%,
+    rgb(67, 145, 146) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgb(79, 108, 79) 0%,
+    rgb(255, 247, 17) 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 10px;
+  color: rgb(20, 19, 19);
+}
+
+.edit-icon {
+  color: rgb(0, 0, 0);
+}
